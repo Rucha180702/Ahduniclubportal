@@ -1,0 +1,203 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<style>
+    body{
+    height: 100%;
+    margin: 0;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.pimg1, .pimg2, .pimg3{
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg1{
+    background-image: url("{% static 'images/img_5.jpg' %}");
+    min-height: 580px;
+}
+
+.pimg2{
+    background-image: url("{% static 'images/img_2.png' %}");
+    min-height: 400px;
+}
+
+.pimg3{
+    background-image: url("{% static 'images/img_2.png' %}");
+    min-height: 400px;
+}
+
+#clock{
+    width: 100%;
+    position: absolute;
+    font-size: 5vw;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: -200px;
+}
+
+.section-dark, .section-dark2{
+    text-align: center;
+    padding: 50px 80px;
+
+}
+.sectionlight{
+    height:500px;
+}
+.collageimg{
+    position: absolute;
+    height: 500px;
+    width: 700px;
+    /* margin-left: -100px; */
+    /* margin-top: 1570px; */
+    margin-bottom: 50px;
+}
+section img.collageimg
+{
+    z-index: 10;
+}
+.text{
+    letter-spacing: 0.25em;
+    position: absolute;
+    text-align: center;
+    margin-top: -10px;
+    margin-left: 1300px;
+    color: #3b4e4f;
+    font-size: 4vw;
+    overflow-x: hidden;
+    transform: translateY(150px);
+}
+.sectionlight{
+    background-color: lightgray;
+    color: #666;
+}
+
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.section-dark2{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 26px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border{
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 20px;
+}
+
+.ptext .bordertrans{
+    background-color: transparent;
+    color: white;
+}
+
+@media(max-width: 568px){
+    .pimg1, .pimg2, .pimg3{
+        background-attachment: scroll;
+    }
+}
+</style>
+<body onload="realtimeclock()">
+    <div class="pimg1">
+    <div class="ptext">
+        <span class="border">
+            HELLO THERE
+        </span>
+        </div>
+    </div>
+    <section class="sectionlight">
+        <div id="clock"></div>
+        <!-- <img src="{% static 'images/Ahmedabad University.png' %}" class="collageimg" id="collageimgid"> -->
+        <h2 class="text" id="textid"> Ahmedabad<br>University</br>Club<br>Portal</h2>
+    </section>
+    <section class="sectionlight">
+        <img src="{% static 'images/Ahmedabad University.png' %}" class="collageimg" id="collageimgid">
+    </section>
+    <div class="pimg2">
+        <div class="ptext">
+            <span class="bordertrans">
+                Ahmedabad University Clubs
+            </span>
+        </div>
+    </div>
+    <section class="section-dark">
+        <h2>Clubs</h2>
+        <p>
+            The University has various clubs through which it provides the students, an opportunity to nurture their skills and talents and acts as platform for students to try out new things and explore their talent.
+        </p>
+    </section>
+    <div class="pimg3">
+        <div class="ptext">
+            <span class="bordertrans">
+                About University
+            </span>
+        </div>
+    </div>
+    <section class="section-dark2">
+        <h2> Ahmedabad University</h2>
+        <p>
+            The University aims to provide liberal education focused on interdisciplinary learning and research thinking. It also independent thinkers and compassionate leaders who go on to engage innovatively with the complex challenges of our societies. 
+        </p>
+    </section>
+    <div class="pimg1">
+        <div class="ptext">
+        </div>
+    </div>
+    <script>
+        let imgcollage = document.getElementById('collageimgid');
+        let sectionlight = document.getElementById('textid');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            imgcollage.style.left= value*(0.3) + 'px';
+            sectionlight.style.right = value*(0.5) + 'px';
+        })
+
+        function realtimeclock(){
+            var rtclock = new Date();
+
+            var hours = rtclock.getHours();
+            var minutes= rtclock.getMinutes();
+            var seconds = rtclock.getSeconds();
+
+            var ampm = (hours < 12) ? "AM" : "PM";
+            hours = (hours>12) ? hours - 12 : hours;
+
+            hours = ("0" + hours).slice(-2);
+            minutes = ("0" + minutes).slice(-2);
+            seconds = ("0" + seconds).slice(-2);
+
+            document.getElementById('clock').innerHTML = hours + " : " + minutes + " : " + seconds + " " + ampm;
+            var t= setTimeout(realtimeClock, 500); 
+        }
+    </script>
+</body>
+{% endblock %}
+

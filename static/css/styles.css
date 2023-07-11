@@ -1,0 +1,240 @@
+* {
+    border:0 !important;
+    padding:0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+/* .navbar{
+    background-image: linear-gradient(to right, #2e7efb, #ffffff);
+    padding:0px;
+} */
+/* 
+nav-item{
+    color: #1a5dc9;
+    font-size: 25px;
+
+}
+
+#sign-in-button{
+    width:100px;
+    max-height: 40px;
+    padding: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    padding-left: 2px;
+    font-size: 18px;
+}
+
+
+#purpose{
+    background-color: #d3714a;
+    height: 400px;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    background-color: cornsilk;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#rope_gif{
+    margin-left: 80px;
+}
+
+#mail{
+    background-color: #d5d8de;
+    height: 400px;
+}
+
+#mail_gif{
+    float:right;
+    margin-right: 80px;
+}
+
+#sign_in{
+    background-color: #c4dc7a;
+    height: 400px;
+
+}
+
+#signin_gif{
+    margin-left: 80px;
+} */
+
+
+/******** Clubs Page ********/
+.banner-image {
+    background-image: url('banner-img.jpg');
+    background-size: cover;
+  }
+
+#clubs{
+    text-align: center;
+    text-decoration: none;
+    background:none !important;
+    color:#05518d;
+}
+
+#club_home{
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 50px;
+    /* margin-right: 50px; */
+}
+
+hr{
+    height:3px  !important; 
+    width:50%; 
+    border-width:0 !important; 
+    color:rgba(0, 0, 0, 0.651); 
+} 
+
+#clubsection{
+    position:relative;
+    border-radius: 80px 30px 80px 30px;
+    height:400px
+}
+
+
+#para{
+    clear:both;
+    float:right;
+    width:50%;
+    text-align: center;
+    /* padding:10px; */
+    position:absolute;
+    top:40%;
+    right:8%;
+    /* height:80%; */
+
+}
+
+div#para > p{
+    color:white;
+}
+
+div#para > a{
+    color:white;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+div#para > h4{
+    color:white;
+    text-decoration: none;
+}
+
+@media (max-width: 895px){
+    .club_gifs{
+        position: relative;
+        left:25%;
+        width: 15em;
+        height: 15em;
+    }
+
+    #para{
+    position:absolute;
+    top:65%;
+    right:25%;
+
+    }
+
+
+}
+
+@media (max-width: 710px){
+    .club_gifs{
+        position: relative;
+        left:25%;
+        width: 10em;
+        height: 10em;
+    }
+
+    #para{
+    position:absolute;
+    top:80%;
+    right:20%;
+    font-size: 7px;
+    margin-top: -100px;
+    width:60%;
+    }
+
+    #clubsection{
+        height:350px
+    }
+
+
+}
+
+@media (max-width: 710px){
+    .club_gifs{
+        position: relative;
+        left:20%;
+        width: 8em;
+        height: 8em;
+    }
+
+    #para{
+    position:absolute;
+    top:75%;
+    right:20%;
+    font-size: 7px;
+    margin-top: -100px;
+    width:60%;
+    }
+
+    #clubsection{
+        height:350px
+    }
+
+
+}
+
+/****Individual CLub Page*****/
+#ind_club_heading{
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.content{
+    text-align: center;
+    margin-top: 150px;
+}
+
+#info_para{
+    color:#ffffff;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#register_button{
+    float: left;
+    margin-left: 350px;
+    margin-top: 60px;
+    border: white solid;
+}
+
+#event_button{
+    float: right;
+    margin-right: 350px;
+    margin-top: 60px;
+}
+
+.btn {
+    border: 2px solid rgb(253, 253, 253);
+     background-color: white; 
+    color: rgb(12, 12, 12);
+    padding: 14px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+

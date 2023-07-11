@@ -1,0 +1,305 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clubs-HomePage</title>
+    <!-- <link rel="stylesheet" href=" {% static 'css/bootstrap.min.css' %} "> -->
+
+    <!-- <link rel="stylesheet" href=" {% static 'styles.css' %} "> -->
+    <link rel="stylesheet" href=" {% static 'css/styles.css' %} ">
+    <link rel="stylesheet" href=" {% static 'css/bootstrap.min.css' %} ">
+  </head>
+
+  <body>
+
+    <!-- Banner Image  -->
+    <div
+    class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"
+  >
+    <div class="content text-center">
+      <h1 class="text-white">CLUBS</h1>
+    </div>
+  </div>
+
+
+    
+    <div>
+      <hr class="mx-auto">
+    </div>
+  
+    <section id="clubsection" class="mx-auto" style="background-color: #21315a; width:80%;">
+          
+      <a href="{% url 'club1' %}"><img class="club_gifs" src=" {% static 'images/env.gif' %} "  width="40%" height="90%" style="margin-left: 40px; margin-top: 10px;" ></a>
+      <div id="para">
+        <a href="{% url 'club1' %} "><h3>ENVIRONMENT CLUB</h3></a>
+         <h4>"Every Little Step Counts"</h4>
+         <!-- <p>The Environment Club is the community of students 
+          from different disciplines concerned about environmental 
+          problems and wishes to do something about it. We believe that 
+          small actions can make a big difference.</p> -->
+          <!-- <a href=" {% static 'club-1.html' %} ">Know more</a> -->
+      </div>
+    </section>
+  
+    <div>
+      <hr class="mx-auto">
+    </div>
+  
+    <section id="clubsection"class="mx-auto" style="background-color: #1d99b3; width:80%;">
+            
+      <a href=" {% url 'club2' %}"><img class="club_gifs"  src=" {% static 'images/ent.gif' %} "   width="40%" height="90%" style="margin-left: 40px; margin-top: 10px;"></a>
+      <div id="para">
+        <a href="{% url 'club2' %} "><h3>ENTREPRENEURS' CLUB</h3></a>
+         <h4>"Creating Opportunities"</h4>
+         <!-- <p>Entrepreneurs' Club intends to provide a platform to the students
+            wherein they will be able to have a dialogue with the distinguished 
+            entrepreneurs, undergo in-depth learning of the different facets 
+            of entrepreneurship, participate in
+            various brainstorming sessions along 
+            with getting real-world exposure and 
+            hands-on working experience.</p>
+          <a href=" {% static '' %} ">Know more</a> -->
+      </div>
+    
+     
+    </section>
+  
+    <div>
+      <hr class="mx-auto">
+    </div>
+  
+    <section id="clubsection"class="mx-auto" style="background-color: #f8d24a; width:80%;">
+            
+      <a href=" {% url 'club3' %} "><img class="club_gifs"  src=" {% static 'images/dance.gif' %} "  width="40%" height="90%" style="margin-left: 40px; margin-top: 10px;"></a>
+      <div id="para">
+        <a href=" {% url 'club3' %} "><h3>DANCE CLUB</h3></a>
+        <h4>"If you can walk, you can dance"</h4>
+        <!-- <p>The Club introduces you to the world of 
+          dance here with some exciting prospects.
+           We are not only meant for professionals 
+           but also for the non dancers who want
+            to passionately learn something new and creative.
+           As it is said 'Believe it you can and you are halfway there'.</p>
+          <a href=" {% static '' %} ">Know more</a> -->
+      </div>
+    </section>
+  
+    <div>
+      <hr class="mx-auto">
+    </div>
+  
+    <section id="clubsection" class="mx-auto" style="background-color: #ef4238; width:80%;">
+            
+      <a href=" {% url 'club4' %} "><img class="club_gifs" src=" {% static 'images/photo.gif' %} "   width="40%" height="90%" style="margin-left: 40px; margin-top: 10px;"></a>
+      <div id="para">
+        <a href=" {% url 'club4' %} "><h3>PHOTOGRAPHY CLUB</h3></a>
+        <h4>"Photography is more than just a picture, it's a feeling captured"</h4>
+         <!-- <p>The Photography Club is an initiative started by 
+           a few students at Ahmedabad University. 
+           The club has been in existence since the yea
+            since its constant progress in the field of photography,
+            more and more people have become a part of the club.</p>
+          <a href=" {% static '' %} ">Know more</a> -->
+      </div>
+    </section>
+  
+    <div>
+      <hr class="mx-auto">
+    </div>
+  
+    <section id="clubsection" class="mx-auto" style="background-color: #dfbf96; width:80%;">
+            
+      <a href=" {% url 'club5' %} "><img class="club_gifs" src=" {% static 'images/arts.gif' %} "   width="40%" height="90%" style="margin-left: 40px; margin-top: 10px;"></a>
+      <div id="para">
+        <a href=" {% url 'club5' %} "><h3> FINE ARTS CLUB</h3></a>
+        <h4>"Art is an amalgamation of creativity and emotions"</h4>
+         <!-- <p>The Fine Arts Club of the Ahmedabad University 
+           is the happy place for all creatives to explore.
+          It is a platform where one explores the creative 
+          side of themselves and learns along with exploring the beautiful world of art.
+          Be it Pictionary or Dream catcher or fluid art, 
+          you will always have a souvenir to take. </p>
+          <a href=" {% static '' %} ">Know more</a> -->
+      </div>
+    </section>
+  
+    <div>
+      <hr class="mx-auto">
+    </div>
+  
+    <section id="clubsection" class="mx-auto" style="background-color: #413258; width:80%;">
+            
+      <a href=" {% url 'club6' %} "><img class="club_gifs" src=" {% static 'images/heritage.gif' %} "   width="40%" height="90%" style="margin-left: 40px; margin-top: 10px;"></a>
+      <div id="para">
+        <a href=" {% url 'club6' %} "><h3> HERITAGE CLUB</h3></a>
+        <h4>"Our Heritage, our Pride"</h4>
+         <!-- <p>TAt Sharitage, we aim to create a space where
+            people from different cultural backgrounds can 
+            come forward and share what they feel is their 
+            heritage with others. We believe that sharing about 
+            the things we love adds more value to it. This is also 
+            reflected in the name of the club which is a combination 
+            of two words 'Sharing' and 'Heritage'.</p>
+          <a href=" {% static '' %} ">Know more</a> -->
+      </div>
+    </section>
+  
+    <div>
+      <hr class="mx-auto">
+    </div>
+  
+    <section id="clubsection" class="mx-auto" style="background-color: #ffb956; width:80%;">
+            
+      <a href=" {% url 'club7' %} "><img class="club_gifs" src=" {% static 'images/lit.gif' %} "   width="40%" height="90%" style="margin-left: 40px; margin-top: 10px;"></a>
+      <div id="para">
+        <a href="  {% url 'club7' %} "><h3>LITERARY CLUB</h3></a>
+         <h4>"The Wordplay of Expressions!"</h4>
+         <!-- <p>The Literary Club as its name suggests is about celebrating the diversity of expression in languages.
+  
+          At the Literary Club, we realize the power of words.
+          We wish to free the constricted definitions of literature, 
+          rejuvenate the excitement of reading works of art, and 
+          celebrate the joy of creative writing. </p>
+          <a href=" {% static '' %} ">Know more</a> -->
+      </div>
+    </section>
+  
+    <div>
+      <hr class="mx-auto">
+    </div>
+  
+    <section id="clubsection" class="mx-auto" style="background-color: #2cb757; width:80%;">
+            
+      <a href="  {% url 'club8' %} "><img class="club_gifs" src=" {% static 'images/manage.gif' %} "   width="40%" height="90%" style="margin-left: 40px; margin-top: 10px;"></a>
+      <div id="para">
+        <a href=" {% url 'club8' %} "><h3> MANAGEMENT CLUB</h3></a>
+         <h4>"Multitasking is the new trend, We nurture it"</h4>
+         <!-- <p>We here at The Management Club present to you the world of Management -
+            the other side of the table! We work on everything, from Marketing to 
+            Financing to Human Resources to Operations. Managers are the pillars of 
+            every firm that exists - Management is for everything and everyone! </p>
+          <a href=" {% static '' %} ">Know more</a> -->
+      </div>
+    </section>
+  
+    <div>
+      <hr class="mx-auto">
+    </div>
+  
+    <section id="clubsection" class="mx-auto" style="background-color: #89eac6; width:80%;">
+            
+      <a href=" {% url 'club9' %} "><img class="club_gifs" src=" {% static 'images/food.gif' %} "  width="40%" height="90%" style="margin-left: 40px; margin-top: 10px;"></a>
+      <div id="para">
+        <a href=" {% url 'club9' %} "><h3> FOOD CLUB</h3></a>
+         <h4>"We are Fooodiiiessss!!!"</h4>
+         <!-- <p>The Food and Nutrition Club organizes events that focus not
+            only on cooking but also covers other aspects like food plating,
+             careers, etc. The club aims to develop an appreciation for self-cooked 
+             food among students and to complement food with nutrition.</p>
+          <a href=" {% static '' %} ">Know more</a> -->
+      </div>
+    </section>
+  
+    <div>
+      <hr class="mx-auto">
+    </div>
+  
+    <section id="clubsection" class="mx-auto" style="background-color: #2787b7; width:80%;">
+            
+      <a href=" {% url 'club10' %} "><img class="club_gifs" src=" {% static 'images/film.gif' %} "   width="40%" height="90%" style="margin-left: 40px; margin-top: 10px;"></a>
+      <div id="para">
+        <a href=" {% url 'club10' %}  "><h3> FILM APPRECIATION CLUB</h3></a>
+         <h4>"Get Filmified"</h4>
+         <!-- <p>The Film Appreciation Club is a space for dialogue, 
+           conversations, and questions on FIlms.
+          We recognize that art holds a proverbial mirror to society,
+           and in this spirit, wish to present and talk about all kinds of films - 
+           indie, experimental, and mainstream.</p>
+          <a href=" {% static '' %} ">Know more</a> -->
+      </div>
+    </section>
+  
+    <div>
+      <hr class="mx-auto">
+    </div>
+  
+    <section id="clubsection" class="mx-auto" style="background-color: #fdd513; width:80%;">
+            
+      <a href=" {% url 'club11' %}  "><img class="club_gifs" src=" {% static 'images/music.gif' %} "   width="40%" height="90%" style="margin-left: 40px; margin-top: 10px;"></a>
+      <div id="para">
+        <a href=" {% url 'club11' %} "><h3>MUSIC CLUB</h3></a>
+         <h4>"Lights, Sound, Music!"</h4>
+         <!-- <p>Music Club focuses on the motive of broadening the spectrum of MUSIC,
+            and putting it forth of the audience that music isn’t just listening 
+            to some soothing peaceful tunes but much more than that; it’s depth
+            needs to be discovered at ease and peace.</p>
+          <a href=" {% static '' %} ">Know more</a> -->
+      </div>
+    </section>
+  
+    <div>
+      <hr class="mx-auto">
+    </div>
+  
+    <section id="clubsection" class="mx-auto" style="background-color: #53bbb4; width:80%;">
+            
+      <a href=" {% url 'club12' %} "><img class="club_gifs" src=" {% static 'images/fitness.gif' %} "  width="40%" height="90%" style="margin-left: 40px; margin-top: 10px;"></a>
+      <div id="para">
+        <a href=" {% url 'club12' %} "><h3>FITNESS CLUB</h3></a>
+         <h4>"Promoting Physical and Mental Wellbeing"</h4>
+         <!-- <p>The Fitness Club of Ahmedabad University aims to promote
+          both Mental and Physical health. As a club, our prime focus
+           is on the overall development of our University's students.
+            We achieve that by hosting events that not only make
+             the participants test their physical fitness but also 
+             challenge their mental fitness.</p>
+          <a href=" {% static '' %} ">Know more</a> -->
+      </div>
+      </section>
+  
+    
+    <div>
+      <hr class="mx-auto">
+    </div>
+  
+    <section id="clubsection" class="mx-auto" style="background-color: #a7d1e5; width:80%;">
+            
+      <a href=" {% url 'club13' %} "><img class="club_gifs" src=" {% static 'images/coding.gif' %} "   width="40%" height="90%" style="margin-left: 40px; margin-top: 10px;"></a>
+      <div id="para">
+        <a href=" {% url 'club13' %} "><h3>PROGRAMMING CLUB</h3></a>
+         <h4>"Community of Passionate Programmers!"</h4>
+         <!-- <p>The Programming Club is here to promote and improve the coding
+            culture at the University. We are committed to giving our best 
+            efforts to bring exposure to our students and promote the spirit 
+            of collaboration, competition and curiosity. </p>
+          <a href=" {% static '' %} ">Know more</a> -->
+      </div>
+    </section>
+  
+    <div>
+      <hr class="mx-auto">
+    </div>
+
+    <!-- <script src=" {% static 'js/bootstrap.bundle.min.js' %} "></script> -->
+    <script src="{% static 'assets\js\bootstrap.bundle.min.js' %}"></script>
+     <!-- <script type="text/javascript">
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 550) {
+          nav.classList.add('bg-dark', 'shadow');
+        } else {
+          nav.classList.remove('bg-dark', 'shadow');
+        }
+      });
+    </script> -->
+  </body>
+</html>
+
+{% endblock %}

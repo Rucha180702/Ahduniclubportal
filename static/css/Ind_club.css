@@ -1,0 +1,19 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+#club_home{
+  padding: 15px;
+  text-decoration: none;
+}
+.fa-arrow-left{
+  margin-top: 7px;
+  margin-left: 10px;
+}
+
+
+@media (max-width: 600px){
+  .w3-content{
+    text-align: center;
+  }
+}
+
